@@ -8,21 +8,21 @@
 
 ## Usage
 
-POS similarity:
+1/POS similarity:
 
 ```bash
 source batch-pos.sh 
 ```
 it generates conllu.2 files
 
-Dependency similarity:
+2/Dependency similarity:
 
 ```bash
 source batch-dep.sh
 ```
 it generates conllu.3 files
 
-Intersection:
+3/Intersection:
 
 ```bash
 source batch-intersection.sh
