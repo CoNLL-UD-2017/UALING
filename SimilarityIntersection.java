@@ -7,7 +7,7 @@ public class SimilarityIntersection {
 	public static void main (String[] args) throws IOException {
 
 		/**
-			reading .2
+		  reading .2
 # sent_id = train-s1
 		 **/
 		String fileName = args[0];
@@ -16,10 +16,10 @@ public class SimilarityIntersection {
 		String str = new String();
 		int id = 0;
 		str = d.readLine();
-Hashtable hash = new Hashtable();
+		Hashtable hash = new Hashtable();
 		while (str != null) {
 			str = str.trim();
-if (str.startsWith("# sent_id = ")) hash.put(str, "1");
+			if (str.startsWith("# sent_id = ")) hash.put(str, "1");
 
 			str = d.readLine();
 		}
@@ -30,7 +30,7 @@ if (str.startsWith("# sent_id = ")) hash.put(str, "1");
 		 **/
 		fileName = args[1];
 		d = new BufferedReader(new InputStreamReader(new FileInputStream(new File (fileName)), "UTF8"));
-boolean flag = false;
+		boolean flag = false;
 
 		str = new String();
 		str = d.readLine();
@@ -44,16 +44,16 @@ boolean flag = false;
 			String delim = "\t";
 
 			if (str.startsWith("#")) {
-if (str.startsWith("# sent_id = ") && hash.get(str)!=null) {
-flag = true;
-}
-sent[sentAddr++] = str;}
+				if (str.startsWith("# sent_id = ") && hash.get(str)!=null) {
+					flag = true;
+				}
+				sent[sentAddr++] = str;}
 			else if (str.length()==0) {
-if(flag) {
+				if(flag) {
 					for (int j=0; j<sentAddr; j++) 
 						System.out.println(sent[j]); ;
 					System.out.println();
-}
+				}
 
 				train = new String[2048][2]; 
 				sent = new String[2048]; sentAddr = 0; 

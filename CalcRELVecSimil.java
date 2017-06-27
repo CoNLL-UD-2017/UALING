@@ -75,8 +75,8 @@ public class CalcRELVecSimil {
 			String delim = "\t";
 
 			if (str.startsWith("#")) {
-sent[sentAddr++] = str;
-}
+				sent[sentAddr++] = str;
+			}
 			else if (str.length()==0) {
 				train[addr++][0] = "EOS"; 
 				Hashtable rel = new Hashtable();
@@ -84,7 +84,7 @@ sent[sentAddr++] = str;
 				for (int i=1; i<addr-1; i++) {
 					String prev = train[i][0]; 
 					String temp = train[i][1]; 
-//System.out.println(temp);
+					//System.out.println(temp);
 					String dep = temp.substring(temp.indexOf(";")+1, temp.length()).trim();
 					String head = temp.substring(0, temp.indexOf(";")).trim();
 					if (!head.equals("0") && !head.equals("_")) {
@@ -129,7 +129,7 @@ sent[sentAddr++] = str;
 				String[] entry;
 				entry = str.split(delim);
 				if (entry[0].contains("-")) {
-                                        sent[sentAddr++] = str;
+					sent[sentAddr++] = str;
 				}
 				else {
 					train[addr][0] = entry[3];

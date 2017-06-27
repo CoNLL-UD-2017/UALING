@@ -30,7 +30,7 @@ public class MakeRel {
 2	ist	sein	VERB	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 3	ein	ein	DET	ART	Definite=Ind|PronType=Art	5	det	_	_
 4	einzigartiger	einzigartig	ADJ	ADJA	Degree=Cmp,Pos	5	amod	_	_
-*/
+			 */
 			if (str.startsWith("#")) {}
 			else if (str.length()==0) {
 				ar[id++][0] = "EOS"; 

@@ -22,7 +22,7 @@ public class MakeTriPOS {
 
 		while (str != null) {
 			str = str.trim();
-//System.out.println(str);
+			//System.out.println(str);
 			String delim = "\t";
 			/*
 # sent_id = dev-s1

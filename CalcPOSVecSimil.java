@@ -75,7 +75,7 @@ public class CalcPOSVecSimil {
 			String delim = "\t";
 
 			if (str.startsWith("#")) {
-sent[sentAddr++] = str;}
+				sent[sentAddr++] = str;}
 			else if (str.length()==0) {
 				train[addr++][0] = "EOS"; 
 				//String[] pos = new String[1024];
